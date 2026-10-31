@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriAsia Mart | Cloud E-Commerce</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230d9488'><circle cx='12' cy='12' r='10'/><path d='M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z' stroke='%23ffffff' stroke-width='1.5' fill='none'/></svg>">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+    body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
+    header { background: #0f172a; color: white; padding: 1.25rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #0d9488; }
+    .brand { display: flex; align-items: center; gap: 0.6rem; font-size: 1.35rem; font-weight: 700; }
+    .brand svg { width: 24px; height: 24px; fill: #0d9488; }
+    .badge { background: #0d9488; color: white; font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 4px; font-weight: 600; }
+    nav a { color: #cbd5e1; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; font-weight: 500; }
+    nav a:hover { color: #38bdf8; }
+    .hero { text-align: center; padding: 3rem 1.5rem; background: #ffffff; border-bottom: 1px solid #e2e8f0; }
+    .hero h1 { font-size: 2.2rem; color: #0f172a; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.05rem; color: #64748b; max-width: 620px; margin: 0 auto 1.2rem; }
+    .geo-pill { display: inline-flex; align-items: center; gap: 0.4rem; background: #f0fdfa; color: #0f766e; border: 1px solid #ccfbf1; padding: 0.35rem 0.9rem; border-radius: 9999px; font-size: 0.85rem; font-weight: 600; }
+    .geo-pill svg { width: 14px; height: 14px; fill: currentColor; }
+    .container { max-width: 1050px; margin: 2rem auto; padding: 0 1.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: white; border-radius: 8px; border: 1px solid #e2e8f0; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    .icon-box { width: 44px; height: 44px; border-radius: 8px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; color: #0d9488; }
+    .icon-box svg { width: 22px; height: 22px; fill: currentColor; }
+    .card-title { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .card-desc { font-size: 0.9rem; color: #64748b; margin-bottom: 1.2rem; }
+    .card-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #f1f5f9; }
+    .price { font-size: 1.2rem; font-weight: 700; color: #0f172a; }
+    .btn { background: #0d9488; color: white; border: none; padding: 0.45rem 0.9rem; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: 600; }
+    .btn:hover { background: #0f766e; }
+    footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.85rem; border-top: 1px solid #e2e8f0; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+      AfriAsia Mart <span class="badge">Protected</span>
+    </div>
+    <nav>
+      <a href="#products">Store</a>
+      <a href="#network">Architecture</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Marketplace for Africa & Asia</h1>
+    <p>Protected by CloudFront Edge and AWS WAF Geographic Restriction policies.</p>
+    <div class="geo-pill">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      Geographic Boundary: Africa and Asia Continents Only
+    </div>
+  </section>
+
+  <main class="container" id="products">
+    <div class="grid">
+      <div class="card">
+        <div>
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+          </div>
+          <div class="card-title">Cloud Developer Workstation</div>
+          <p class="card-desc">High performance system designed for cloud systems administration and container orchestration.</p>
+        </div>
+        <div class="card-footer">
+          <span class="price">$1,299</span>
+          <button class="btn">Order Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24"><path d="M18.5 3H6c-1.1 0-2 .9-2 2v5.71c0 3.83 2.95 7.18 6.78 7.29 3.96.12 7.22-3.06 7.22-7v-1h.5c1.93 0 3.5-1.57 3.5-3.5S20.43 3 18.5 3zM16 5v3H6V5h10zm2.5 3H18V5h.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5zM4 19h16v2H4v-2z"/></svg>
+          </div>
+          <div class="card-title">Kenyan AA Reserve Coffee</div>
+          <p class="card-desc">Single-origin washed Arabica coffee beans sustainably sourced from high-altitude estates.</p>
+        </div>
+        <div class="card-footer">
+          <span class="price">$24</span>
+          <button class="btn">Order Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9v7c0 1.1.9 2 2 2h4v-8H5v-1a7 7 0 0 1 14 0v1h-4v8h4c1.1 0 2-.9 2-2v-7a9 9 0 0 0-9-9z"/></svg>
+          </div>
+          <div class="card-title">Audio Studio Headset</div>
+          <p class="card-desc">Low-latency acoustic monitor headset for conference calls and professional production.</p>
+        </div>
+        <div class="card-footer">
+          <span class="price">$149</span>
+          <button class="btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>AWS re/Start Project 1 • Amazon EC2 with CloudFront & AWS WAF Geo-Restriction</p>
+  </footer>
+</body>
+</html>

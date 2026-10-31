@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 560" width="100%" height="100%">
+  <defs>
+    <style>
+      .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 13px; fill: #232f3e; font-weight: 500; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 15px; fill: #16191f; font-weight: 700; }
+      .header-tag { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; fill: #ffffff; font-weight: 700; }
+      .subtext { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11px; fill: #545b64; }
+      .arrow { stroke: #232f3e; stroke-width: 1.8; fill: none; marker-end: url(#arrowhead); }
+      .arrow-blocked { stroke: #d13212; stroke-width: 1.8; stroke-dasharray: 4,4; fill: none; marker-end: url(#arrowhead-red); }
+      .arrow-success { stroke: #1d8102; stroke-width: 1.8; fill: none; marker-end: url(#arrowhead-green); }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#232f3e" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#d13212" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1d8102" />
+    </marker>
+  </defs>
+
+  <rect width="950" height="560" fill="#ffffff" />
+
+  <!-- Outer Box -->
+  <rect x="20" y="20" width="910" height="520" rx="8" fill="#ffffff" stroke="#7d8998" stroke-width="1.5" />
+  <rect x="20" y="20" width="90" height="24" rx="4" fill="#ec7211" />
+  <text x="28" y="37" class="header-tag">AWS Cloud</text>
+
+  <!-- Users Left Column -->
+  <g transform="translate(40, 80)">
+    <!-- Allowed Users -->
+    <rect x="0" y="30" width="220" height="130" rx="6" fill="#f2fcf3" stroke="#1d8102" stroke-width="1.2" />
+    <circle cx="35" cy="65" r="16" fill="#1d8102" />
+    <path d="M30 65 L33 69 L40 60" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" />
+    <text x="60" y="60" class="title">Allowed Users</text>
+    <text x="60" y="77" class="subtext">Global Access (US, EU, AF, AS)</text>
+    <rect x="15" y="105" width="190" height="40" rx="4" fill="#ffffff" stroke="#d5dbdb" />
+    <text x="25" y="122" class="subtext" fill="#1d8102">HTTP 200 OK</text>
+    <text x="25" y="137" class="subtext">Ultra-low latency edge cache</text>
+
+    <!-- Blocked Users -->
+    <rect x="0" y="240" width="220" height="130" rx="6" fill="#fdf3f2" stroke="#d13212" stroke-width="1.2" />
+    <circle cx="35" cy="275" r="16" fill="#d13212" />
+    <path d="M29 269 L41 281 M41 269 L29 281" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+    <text x="60" y="270" class="title">Restricted Users</text>
+    <text x="60" y="287" class="subtext">Origin: Russia (RU)</text>
+    <rect x="15" y="315" width="190" height="40" rx="4" fill="#ffffff" stroke="#d5dbdb" />
+    <text x="25" y="332" class="subtext" fill="#d13212">HTTP 403 Forbidden</text>
+    <text x="25" y="347" class="subtext">Blocked at nearest edge location</text>
+  </g>
+
+  <!-- CloudFront Edge Section -->
+  <rect x="310" y="70" width="300" height="430" rx="6" fill="#fbf8fd" stroke="#8c4fff" stroke-width="1.5" />
+  <rect x="310" y="70" width="160" height="22" rx="3" fill="#8c4fff" />
+  <text x="318" y="86" class="header-tag">Amazon CloudFront CDN</text>
+
+  <g transform="translate(330, 115)">
+    <circle cx="28" cy="28" r="24" fill="#8c4fff" />
+    <circle cx="28" cy="28" r="12" fill="none" stroke="#ffffff" stroke-width="2" />
+    <circle cx="28" cy="28" r="5" fill="#ffffff" />
+    <text x="65" y="24" class="title">Edge Distribution</text>
+    <text x="65" y="42" class="subtext">Global Points of Presence</text>
+
+    <!-- Geographic Restriction Box inside CloudFront -->
+    <rect x="0" y="80" width="260" height="150" rx="6" fill="#ffffff" stroke="#d5dbdb" stroke-width="1" />
+    <rect x="15" y="95" width="36" height="36" rx="4" fill="#ec7211" />
+    <path d="M25 113 L41 113 M33 105 L33 121" stroke="#ffffff" stroke-width="2" />
+    <text x="60" y="110" class="title">Geo-Restrictions</text>
+    <text x="60" y="126" class="label">Blocklist: Russia (RU)</text>
+    <rect x="15" y="150" width="230" height="65" rx="4" fill="#f2f3f3" />
+    <text x="25" y="168" class="subtext">Inspects client IP origin</text>
+    <text x="25" y="185" class="subtext">Blocks unauthorized country codes</text>
+    <text x="25" y="202" class="subtext">without forwarding to origin storage</text>
+
+    <!-- Origin Access Control (OAC) -->
+    <rect x="0" y="250" width="260" height="110" rx="6" fill="#ffffff" stroke="#d5dbdb" stroke-width="1" />
+    <rect x="15" y="265" width="36" height="36" rx="4" fill="#248814" />
+    <!-- Lock graphic -->
+    <rect x="23" y="283" width="20" height="14" rx="2" fill="#ffffff" />
+    <path d="M27 283 L27 277 A6 6 0 0 1 39 277 L39 283" fill="none" stroke="#ffffff" stroke-width="2" />
+    <text x="60" y="280" class="title">Origin Access Control</text>
+    <text x="60" y="296" class="subtext">SigV4 Request Signing</text>
+    <text x="15" y="335" class="subtext" fill="#248814">Enforces private bucket access only</text>
+  </g>
+
+  <!-- S3 Storage Origin Section -->
+  <rect x="660" y="70" width="240" height="430" rx="6" fill="#f4fbf5" stroke="#248814" stroke-width="1.5" />
+  <rect x="660" y="70" width="130" height="22" rx="3" fill="#248814" />
+  <text x="668" y="86" class="header-tag">Amazon S3 Origin</text>
+
+  <g transform="translate(680, 120)">
+    <circle cx="28" cy="28" r="24" fill="#248814" />
+    <path d="M18 20 L38 20 L35 38 L21 38 Z" fill="none" stroke="#ffffff" stroke-width="2" />
+    <text x="62" y="24" class="title">S3 Bucket</text>
+    <text x="62" y="42" class="subtext">Static Site Hosting</text>
+
+    <rect x="0" y="80" width="200" height="140" rx="6" fill="#ffffff" stroke="#d5dbdb" stroke-width="1" />
+    <text x="15" y="105" class="label">Private Assets</text>
+    <text x="15" y="125" class="subtext">• index.html</text>
+    <text x="15" y="145" class="subtext">• style.css</text>
+    <text x="15" y="165" class="subtext">• app.js</text>
+    <text x="15" y="185" class="subtext">• error.html</text>
+
+    <rect x="0" y="240" width="200" height="120" rx="6" fill="#ffffff" stroke="#d5dbdb" stroke-width="1" />
+    <text x="15" y="265" class="title">Security Policy</text>
+    <text x="15" y="285" class="subtext">Block Public Access: ON</text>
+    <text x="15" y="305" class="subtext">Bucket Policy: Allows only</text>
+    <text x="15" y="325" class="subtext">CloudFront Service Principal</text>
+    <text x="15" y="345" class="subtext" fill="#1d8102">Direct S3 URL is blocked</text>
+  </g>
+
+  <!-- Connectors -->
+  <!-- Allowed user to CloudFront -->
+  <path d="M260 145 L310 145" class="arrow-success" />
+  <!-- Blocked user to CloudFront -->
+  <path d="M260 305 L310 305" class="arrow-blocked" />
+  <!-- CloudFront to S3 -->
+  <path d="M610 280 L660 280" class="arrow" />
+
+</svg>
