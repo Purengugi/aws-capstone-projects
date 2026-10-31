@@ -24,7 +24,7 @@ Below is the technical architecture implemented for private database isolation, 
 ## Repository Structure
 
 ```
-aws-capstone-portfolio/
+aws-capstone-projects/
 ├── docs/
 │   ├── generate_architecture_diagram.py      # Python script to generate high-res architecture PNG
 │   └── images/
