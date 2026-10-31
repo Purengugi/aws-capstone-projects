@@ -1,5 +1,6 @@
 # AWS Cloud Architecture Portfolio
 **Author:** Purity Ngugi 
+
 **Focus:** Cloud Architecture, Security, VPC Networking and Cost Optimization  
 
 ---
