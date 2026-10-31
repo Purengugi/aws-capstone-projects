@@ -1,6 +1,6 @@
 # AWS Cloud Architecture Portfolio
-**Author:** Purity Njeri Ngugi | AWS re/Start Cloud Practitioner  
-**Focus:** Cloud Architecture, Security, VPC Networking, and Cost Optimization  
+**Author:** Purity Ngugi 
+**Focus:** Cloud Architecture, Security, VPC Networking and Cost Optimization  
 
 ---
 
