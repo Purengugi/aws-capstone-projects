@@ -7,15 +7,15 @@
 
 ## Architecture Overview
 
-This portfolio contains enterprise cloud infrastructure solutions designed and deployed on Amazon Web Services (AWS). The solutions demonstrate VPC network segmentation, edge geographic access policies, private database security, and cost-effective content distribution.
+This portfolio contains enterprise cloud infrastructure solutions designed and deployed on Amazon Web Services (AWS). The solutions demonstrate VPC network segmentation, edge geographic access policies, private database security and cost-effective content distribution.
 
 ### Master Cloud Architecture Diagram
-The projects follow AWS Well-Architected Framework principles, implementing multi-tier separation, private subnets, edge security, and high availability patterns:
+The projects follow AWS Well-Architected Framework principles, implementing multi-tier separation, private subnets, edge security and high availability patterns:
 
 ![AWS Capstone Architecture Diagram](docs/images/capstone-portfolio-architecture.png)
 
 ### Implemented Two-Tier Subnet & NAT Routing Architecture
-Below is the technical architecture implemented for private database isolation, NAT Gateway routing, and zero-inbound-port remote administration:
+Below is the technical architecture implemented for private database isolation, NAT Gateway routing and zero-inbound-port remote administration:
 
 ![Two-Tier VPC Architecture](docs/images/two-tier-architecture.svg)
 
@@ -96,8 +96,8 @@ aws-capstone-portfolio/
 ```bash
 git init
 git add .
-git commit -m "feat: AWS re/Start cloud architecture portfolio"
+git commit -m "AWS re/Start cloud architecture and capstone projects"
 git branch -M main
-git remote add origin https://github.com/<YOUR-USERNAME>/aws-capstone-portfolio.git
+git remote add origin https://github.com/<YOUR-USERNAME>/aws-capstone-projects.git
 git push -u origin main
 ```
